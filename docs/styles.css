@@ -163,35 +163,78 @@ a {
   border: 1px solid rgba(76, 201, 240, 0.18);
 }
 
-.hero-card {
-  padding: 2rem;
-  position: relative;
-  top: 0;
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background: linear-gradient(135deg, rgba(76, 201, 240, 0.1), rgba(123, 97, 255, 0.08));
+  border: 1px solid rgba(76, 201, 240, 0.15);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(10px);
 }
 
-.hero-card h3 {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+.visual-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.visual-icon {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.visual-content h3 {
+  font-size: 1.3rem;
   color: var(--text);
+  margin-bottom: 0.5rem;
 }
 
-.hero-card p {
-  margin-bottom: 1.2rem;
+.visual-content p {
   color: var(--muted);
   font-size: 1rem;
+  line-height: 1.6;
+  max-width: 350px;
+  margin-bottom: 1rem;
 }
 
-.hero-card ul {
-  margin-top: 1rem;
-  padding-left: 1.2rem;
-  color: var(--muted);
-  list-style: disc;
+.visual-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 0.95rem;
 }
 
-.hero-card ul li {
-  margin-bottom: 0.6rem;
+.visual-list li {
   color: var(--muted);
+  padding-left: 1.5rem;
+  position: relative;
 }
+
+.visual-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
 
 .section {
   padding: 6rem 0;
@@ -409,6 +452,15 @@ a {
     display: grid;
     gap: 2rem;
     padding: 2rem;
+  }
+
+  .hero-visual {
+    padding: 2rem;
+  }
+
+  .visual-icon {
+    width: 100px;
+    height: 100px;
   }
 }
 
