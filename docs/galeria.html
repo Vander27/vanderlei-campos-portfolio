@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo Técnico - Evidências de Campo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; }
+        body { background-color: #0d1117; color: #c9d1d9; padding: 20px; line-height: 1.5; }
+        
+        header { max-width: 1200px; margin: 30px auto; text-align: center; border-bottom: 1px solid #21262d; padding-bottom: 30px; }
+        header h1 { color: #f0f6fc; font-size: 2.2rem; margin-bottom: 10px; font-weight: 600; }
+        header p { color: #8b949e; font-size: 1.1rem; max-width: 700px; margin: 0 auto 15px auto; }
+        
+        .back-btn { display: inline-block; color: #58a6ff; text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+        .back-btn:hover { color: #79c0ff; text-decoration: underline; }
+        
+        .section-title { max-width: 1200px; margin: 40px auto 20px auto; color: #58a6ff; font-size: 1.4rem; font-weight: 600; border-left: 4px solid #58a6ff; padding-left: 12px; }
+        
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto 40px auto; }
+        .gallery-item { background: #161b22; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; }
+        .gallery-item:hover { transform: translateY(-4px); border-color: #58a6ff; }
+        
+        .gallery-item .img-container { width: 100%; height: 240px; background: #070a0e; position: relative; overflow: hidden; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .item-info { padding: 18px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .item-info h3 { font-size: 1.05rem; color: #f0f6fc; margin-bottom: 8px; font-weight: 600; }
+        .item-info p { font-size: 0.88rem; color: #8b949e; line-height: 1.45; }
+        
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .gallery-grid { grid-template-columns: 1fr; gap: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-btn">← Voltar para o Perfil Principal</a>
+        <h1 style="margin-top: 15px;">Acervo Completo de Evidências Técnicas</h1>
+        <p>Registros fotográficos estruturados e auditorias em sistemas de telecomunicações, transmissão de alta frequência, energia crítica e segurança operacional em altura.</p>
+    </header>
+
+    <!-- CATEGORIA 01 -->
+    <h2 class="section-title">1. Vistoria Estrutural Vertical e Alinhamento de Antenas (TSSR)</h2>
+    <main class="gallery-grid">
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo1.jpg" alt="Medição de Tilt e Azimute"></div>
+            <div class="item-info">
+                <h3>Medição Digital de Inclinação (Tilt)</h3>
+                <p>Uso de inclinômetro digital de alta precisão para aferição de tilt mecânico e azimute de antenas setoriais em torre.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo2.jpg" alt="Inspeção de Antena Setorial"></div>
+            <div class="item-info">
+                <h3>Inspeção Física de Elemento Radiante</h3>
+                <p>Verificação de conexões coaxiais, fixação de suportes e integridade estrutural de antena celular de operadora (Claro/ANATEL).</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo3.jpg" alt="Aferição Dimensional Vertical"></div>
+            <div class="item-info">
+                <h3>Aferição Dimensional Estrutural</h3>
+                <p>Coleta física de medidas em elementos metálicos verticais e suportes mecânicos para elaboração de croqui as-built.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo4.jpg" alt="Inspeção de Conectores e Suportes"></div>
+            <div class="item-info">
+                <h3>Auditoria de Conexões de RF e Cabos</h3>
+                <p>Inspeção visual detalhada de cabos coaxiais, jumpers de radiofrequência e aterramento de elementos instalados em altura.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- CATEGORIA 02 -->
+    <h2 class="section-title">2. Auditoria Dimensional e Medições Técnicas de Precisão</h2>
+    <main class="gallery-grid">
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo5.jpg" alt="Medição a Laser de Distâncias"></div>
+            <div class="item-info">
+                <h3>Aferição com Distanciômetro a Laser</h3>
+                <p>Uso de trena digital a laser (SNAKOL SK-50A) para medições de altimetria e distanciamento entre subestruturas da torre.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo6.jpg" alt="Medição de Suportes de Equipamentos"></div>
+            <div class="item-info">
+                <h3>Levantamento Métrico de Gabinetes</h3>
+                <p>Coleta de dados dimensionais de estruturas metálicas de base e perfis estruturais de fixação de equipamentos.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo7.jpg" alt="Mapeamento de Base de Concreto"></div>
+            <div class="item-info">
+                <h3>Inspeção de Fundações e Base de Concreto</h3>
+                <p>Verificação geométrica e dimensional da base de suporte de gabinetes e torres para cálculo de carga mecânica.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- CATEGORIA 03 -->
+    <h2 class="section-title">3. Sistemas Elétricos, Disjuntores e Energia Crítica (NR-10)</h2>
+    <main class="gallery-grid">
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo8.jpg" alt="Medição de Corrente com Alicate"></div>
+            <div class="item-info">
+                <h3>Aferição de Corrente Alternada (AC)</h3>
+                <p>Uso de alicate amperímetro digital de precisão (Minipa ET-3320A True RMS) para monitoramento de carga em barramentos elétricos.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo9.jpg" alt="Inspeção de Quadro de Distribuição"></div>
+            <div class="item-info">
+                <h3>Auditoria Física de QTA / QDC</h3>
+                <p>Inspeção interna de gabinetes de energia (Eltek Valere), barramentos de cobre, fusíveis NH de alta capacidade e DPS.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo10.jpg" alt="Verificação de Disjuntores"></div>
+            <div class="item-info">
+                <h3>Conferência de Sistemas de Proteção</h3>
+                <p>Verificação e testes de seccionamento em mini disjuntores DIN (Siemens, Steck, Sibratec) responsáveis pela proteção dos ativos de TIC.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- CATEGORIA 04 -->
+    <h2 class="section-title">4. Inspeções Aéreas e Mapeamento de Entorno com Drone / RPA</h2>
+    <main class="gallery-grid">
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo11.jpg" alt="Vista Panorâmica Top-Down"></div>
+            <div class="item-info">
+                <h3>Mapeamento Aéreo com Visão Zenithal</h3>
+                <p>Registro top-down de alta resolução para auditoria de layout de site, rotas de esteiramento externo e área de escape periférica.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo12.jpg" alt="Mapeamento de Torres Vizinhas"></div>
+            <div class="item-info">
+                <h3>Análise Próxima de Infraestrutura em Altura</h3>
+                <p>Uso de RPA para inspeção visual detalhada de plataformas superiores, antenas parabólicas de micro-ondas (MW) e sistemas de para-raios.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo13.jpg" alt="Inspeção Panorâmica Urbana"></div>
+            <div class="item-info">
+                <h3>Rastreamento de Visada e Obstruções (LoS)</h3>
+                <p>Imagens panorâmicas aéreas completas utilizadas para validação técnica de linha de visada desobstruída para enlaces de rádio.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- CATEGORIA 05 -->
+    <h2 class="section-title">5. Prontidão Operacional, Logística de Acesso e Normas de Segurança (NR-35)</h2>
+    <main class="gallery-grid">
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo14.jpg" alt="Equipamento de Proteção Individual Completo"></div>
+            <div class="item-info">
+                <h3>Uso Rigoroso de EPI e EPC (NR-35)</h3>
+                <p>Evidência de prontidão operacional com cinturão de segurança tipo paraquedista, talabarte duplo em Y ancorado e capacete com jugular.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <div class="img-container"><img src="img/campo15.jpg" alt="Análise de Rota e Logística de Acesso"></div>
+            <div class="item-info">
+                <h3>Logística e Acessibilidade de Sites</h3>
+                <p>Mapeamento fotográfico completo de estradas de terra secundárias e rotas complexas para acesso de veículos de manutenção técnica de campo.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
